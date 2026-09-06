@@ -72,32 +72,44 @@ Students apply blending skills to read Jade Monkey books while learning sight wo
 
 ## Weekly Teaching Structure
 
-### All-Class Worksheet Time (60 min lesson)
-Every lesson, all 21 students work on the same **Jade Monkey workbook worksheet** (based on the week/unit).
+### Daily Sessions (30 minutes each)
 
-**Worksheet Sequence (5 days):**
-- Day 1: Color by Vowel (phoneme recognition)
-- Day 2: Blend and Match (blending practice)
-- Day 3: Fill in the Vowel (vowel identification)
-- Day 4: Read and Circle Sight Words (sight word recognition + writing)
-- Day 5: Sort by Vowels (categorization/review)
-
-**Differentiation:**
-- Fast finishers move to Worksheet 2, then Worksheet 3
-- Advanced finishers write 10 animals on a blank sheet (open-ended extension)
-- All students are productively engaged
-
-### Small Group Rotation (15 min per group, 2 groups per lesson)
-
-While whole class works on worksheets, pull out 2 groups for focused instruction:
+All students are organized by level (Lower or Upper) and attend 2 sessions per week.
 
 | Day | Group | Size | Focus |
 |-----|-------|------|-------|
-| **Monday** | B1 + B2 | 4 kids | Letter blending foundation, phoneme work |
-| **Tuesday** | S3 + S4 | 6 kids | Reading fluency, leveled book practice |
-| **Wednesday** | S1 | 6 kids | **SIGHT WORD BREAKTHROUGH** — intensive instruction |
-| **Thursday** | S2 | 5 kids | Sight word review, fluency practice |
-| **Friday** | Rest | All | Extensions, free reading, games, assessment |
+| **Monday** | **LOWER LEVELS** (B1, B2, S1) | 10 kids | Move through sight words in book. Differentiate within session by level. Stragglers with TA. |
+| **Tuesday** | **UPPER LEVELS** (S2, S3, S4) | 11 kids | Move through sight words in book. Whole class together. Stragglers with TA. |
+| **Wednesday** | **LOWER LEVELS** (B1, B2, S1) | 10 kids | Continue moving through sight words in book. Differentiate within session by level. Stragglers with TA. |
+| **Thursday** | **UPPER LEVELS** (S2, S3, S4) | 11 kids | Continue moving through sight words in book. Whole class together. Stragglers with TA. |
+| **Friday** | Rest/Assessment | All | Assessment, extensions, or flex day |
+
+### Lesson Flow (30 minutes)
+
+**Lower Levels (B1 + B2 + S1):**
+- B1 students: Focus on letter sounds, phoneme work, blending foundation
+- B2 students: Focus on blending practice, CVC word building
+- S1 students: Focus on sight words from current book level
+- **TA role:** Support students falling behind, provide additional scaffolding
+
+**Upper Levels (S2 + S3 + S4):**
+- All students: Move through sight words in their respective book levels together
+- Pace determined by class progression
+- **TA role:** Support students falling behind, provide catch-up help
+
+### Differentiation Strategy
+
+Within each 30-min session, differentiation happens through:
+1. **Book level** — Each student is on their own book within the session (e.g., S1 on Book 1, S2 on Book 3)
+2. **Sub-focus** — Lower levels break down by phonics skill (sounds vs. blending vs. sight words)
+3. **TA support** — Any student struggling sits with TA for immediate catch-up help
+
+### Student Attendance
+
+- **Lower level students:** Monday + Wednesday (2 sessions/week)
+- **Upper level students:** Tuesday + Thursday (2 sessions/week)
+- **Total students per session:** 10-11 kids
+- **Session length:** 30 minutes
 
 ---
 
