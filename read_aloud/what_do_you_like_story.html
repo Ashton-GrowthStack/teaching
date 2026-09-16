@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day of Yummy Foods</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Comic Sans MS', 'Arial', sans-serif; background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%); padding: 20px; }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        .page {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            page-break-after: always;
+        }
+
+        .title-page {
+            text-align: center;
+            padding: 60px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .title-page h1 { font-size: 48px; margin-bottom: 20px; }
+        .title-page p { font-size: 24px; margin-bottom: 10px; }
+        .title-page .emoji { font-size: 80px; }
+
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .story-section.reversed {
+            direction: rtl;
+        }
+
+        .story-section.reversed > * {
+            direction: ltr;
+        }
+
+        .story-text {
+            font-size: 28px;
+            line-height: 1.6;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .story-text span { color: #667eea; font-size: 32px; }
+
+        .emoji-box {
+            text-align: center;
+            font-size: 100px;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 15px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .small-text {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .full-width-section {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            font-size: 26px;
+            text-align: center;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .full-width-section span { color: #667eea; font-weight: bold; font-size: 30px; }
+
+        .emoji-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-size: 60px;
+        }
+
+        .page-number {
+            text-align: center;
+            color: #999;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { page-break-after: always; margin-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- TITLE PAGE -->
+        <div class="title-page">
+            <p class="emoji">🌟☀️🌙</p>
+            <h1>A Day of Yummy Foods!</h1>
+            <p>What do you like?</p>
+            <p style="font-size: 18px; margin-top: 20px;">A K3 Story Book</p>
+        </div>
+
+        <!-- PAGE 1: BREAKFAST -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🌅 BREAKFAST TIME!</h2>
+
+            <div class="story-section">
+                <div class="story-text">
+                    Good morning!<br>
+                    I like <span>cereal</span>!<br>
+                    Yum yum yum! 😋
+                </div>
+                <div class="emoji-box">🥣</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>toast</span>!<br>
+                    Crunch crunch!<br>
+                    So yummy! 🤤
+                </div>
+                <div class="emoji-box">🍞</div>
+            </div>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>yoghurt</span>!<br>
+                    Smooth and cold.<br>
+                    Mmmmm! 😍
+                </div>
+                <div class="emoji-box">🥛</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>egg</span>!<br>
+                    Golden and warm.<br>
+                    Delicious! 🤩
+                </div>
+                <div class="emoji-box">🥚</div>
+            </div>
+
+            <div class="page-number">Page 1</div>
+        </div>
+
+        <!-- PAGE 2: AFTERNOON SNACK -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🍎 AFTERNOON SNACK TIME!</h2>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>apple</span>!<br>
+                    Crunchy and sweet!<br>
+                    Red red red! 🔴
+                </div>
+                <div class="emoji-box">🍎</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>cookie</span>!<br>
+                    Sweet and crunchy!<br>
+                    Nom nom! 🤪
+                </div>
+                <div class="emoji-box">🍪</div>
+            </div>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>banana</span>!<br>
+                    Yellow and soft!<br>
+                    So good! 😊
+                </div>
+                <div class="emoji-box">🍌</div>
+            </div>
+
+            <div class="page-number">Page 2</div>
+        </div>
+
+        <!-- PAGE 3: LUNCH -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🍽️ LUNCH TIME!</h2>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>sandwich</span>!<br>
+                    Bread and cheese!<br>
+                    Yummy yummy! 😋
+                </div>
+                <div class="emoji-box">🥪</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>pizza</span>!<br>
+                    Cheese and tomato!<br>
+                    So tasty! 🤤
+                </div>
+                <div class="emoji-box">🍕</div>
+            </div>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>potato</span>!<br>
+                    Soft and warm!<br>
+                    Mmm delicious! 😍
+                </div>
+                <div class="emoji-box">🥔</div>
+            </div>
+
+            <div class="page-number">Page 3</div>
+        </div>
+
+        <!-- PAGE 4: DINNER -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🌙 DINNER TIME!</h2>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>noodles</span>!<br>
+                    Long and yummy!<br>
+                    Slurp slurp! 🍜
+                </div>
+                <div class="emoji-box">🍝</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>cake</span>!<br>
+                    Sweet and fluffy!<br>
+                    Yum yum yum! 🎂
+                </div>
+                <div class="emoji-box">🍰</div>
+            </div>
+
+            <div class="page-number">Page 4</div>
+        </div>
+
+        <!-- PAGE 5: DRINKS & BEDTIME -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🌙 BEDTIME TIME!</h2>
+
+            <div class="story-section">
+                <div class="story-text">
+                    I like <span>milk</span>!<br>
+                    Cold and creamy!<br>
+                    So good! 🥛
+                </div>
+                <div class="emoji-box">🥛</div>
+            </div>
+
+            <div class="story-section reversed">
+                <div class="story-text">
+                    I like <span>chocolate</span>!<br>
+                    Warm and yummy!<br>
+                    Mmmmm! ☕
+                </div>
+                <div class="emoji-box">🍫</div>
+            </div>
+
+            <div class="full-width-section" style="margin-top: 40px;">
+                What a yummy day!<br>
+                I like all the foods! 🎉<br>
+                <div class="emoji-row">
+                    🥣🍞🥛🥚🍎🍪🍌🥪🍕🥔🍝🍰🥛🍫
+                </div>
+            </div>
+
+            <div class="page-number">Page 5 - THE END 🌟</div>
+        </div>
+
+        <!-- BONUS PAGE: SONG -->
+        <div class="page">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px; font-size: 32px;">🎵 THE SONG!</h2>
+
+            <div class="full-width-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px;">
+                <p style="font-size: 24px; line-height: 2;">
+                    <strong>What do you like?</strong><br>
+                    (clap clap)<br><br>
+
+                    I like <span style="color: #ffff00;">cereal</span>, toast, yoghurt, egg!<br>
+                    (clap clap)<br><br>
+
+                    I like <span style="color: #ffff00;">apple</span>, cookie, banana, too!<br>
+                    (clap clap)<br><br>
+
+                    I like <span style="color: #ffff00;">sandwich</span>, pizza, potato, noodles!<br>
+                    (clap clap)<br><br>
+
+                    I like <span style="color: #ffff00;">cake</span>, milk, chocolate—YUM!<br>
+                    (clap clap clap!) 🎉
+                </p>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; font-size: 18px; color: #666;">
+                <p>📖 Print this book and read with your K3 class!</p>
+                <p>🎭 Act out each food with gestures!</p>
+                <p>🎵 Sing the song with rhythm and clapping!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
