@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Sight Words Assessment</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: white; padding: 30px; }
+
+        .title { text-align: center; margin-bottom: 40px; }
+        .title h1 { font-size: 32px; color: #333; margin-bottom: 5px; }
+        .title p { font-size: 16px; color: #666; }
+        .title .book { font-size: 18px; color: #888; font-style: italic; }
+
+        .words-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1000px; margin: 0 auto; }
+
+        .word-card { text-align: center; }
+        .word-text { font-size: 48px; font-weight: bold; color: #333; margin-bottom: 30px; }
+        .assess-box { border: 3px solid #333; width: 120px; height: 120px; margin: 0 auto; background: white; }
+
+        @media print {
+            body { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Week 4 Sight Words Assessment</h1>
+        <p class="book">Book 5: Man and Ham</p>
+    </div>
+
+    <div class="words-grid">
+        <div class="word-card">
+            <div class="word-text">his</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">some</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">no</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">it</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">my</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">I</div>
+            <div class="assess-box"></div>
+        </div>
+        <div class="word-card">
+            <div class="word-text">OK</div>
+            <div class="assess-box"></div>
+        </div>
+    </div>
+</body>
+</html>
