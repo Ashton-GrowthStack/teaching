@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Cut and Use</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: white; padding: 10px; }
+
+        .page { page-break-after: always; margin-bottom: 20px; }
+
+        .flashcard-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .flashcard {
+            border: 2px dashed #333;
+            padding: 20px;
+            text-align: center;
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            page-break-inside: avoid;
+            font-weight: bold;
+            background: white;
+            position: relative;
+        }
+
+        .flashcard.question {
+            background: #e3f2fd;
+            border-color: #1976d2;
+        }
+
+        .flashcard.response {
+            background: #f3e5f5;
+            border-color: #7b1fa2;
+        }
+
+        .flashcard.food {
+            background: #e0f2f1;
+            border-color: #00796b;
+        }
+
+        .flashcard-text {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .emoji { font-size: 40px; margin-bottom: 10px; display: block; }
+
+        .cut-line::after {
+            content: "✂ CUT HERE ✂";
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 8px;
+            color: #999;
+        }
+
+        @media print {
+            body { padding: 5px; }
+            .page { margin-bottom: 0; page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: QUESTION PHRASES -->
+    <div class="page">
+        <h2 style="text-align: center; margin-bottom: 15px; font-size: 18px;">🎯 QUESTION PHRASES - Cut These Out</h2>
+
+        <div class="flashcard-row">
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like for breakfast?</div>
+            </div>
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like for snack?</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like for lunch?</div>
+            </div>
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like for tea?</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like for dinner?</div>
+            </div>
+            <div class="flashcard question cut-line">
+                <div class="flashcard-text">What do you like at bedtime?</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: RESPONSE PHRASES -->
+    <div class="page">
+        <h2 style="text-align: center; margin-bottom: 15px; font-size: 18px;">💬 RESPONSE PHRASES - Cut These Out</h2>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like cereal</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like toast</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like yoghurt</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like an apple</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like an egg</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like cake</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like a sandwich</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like pizza</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like a potato</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like pasta</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like a banana</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like a biscuit</div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like milk</div>
+            </div>
+            <div class="flashcard response cut-line">
+                <div class="flashcard-text">I like chocolate</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: FOOD WORD FLASHCARDS -->
+    <div class="page">
+        <h2 style="text-align: center; margin-bottom: 15px; font-size: 18px;">🍽️ FOOD WORDS - Cut & Match These</h2>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥣</span>
+                    <div class="flashcard-text">cereal</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍞</span>
+                    <div class="flashcard-text">toast</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥛</span>
+                    <div class="flashcard-text">yoghurt</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥚</span>
+                    <div class="flashcard-text">egg</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍎</span>
+                    <div class="flashcard-text">apple</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍰</span>
+                    <div class="flashcard-text">cake</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥪</span>
+                    <div class="flashcard-text">sandwich</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍕</span>
+                    <div class="flashcard-text">pizza</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥔</span>
+                    <div class="flashcard-text">potato</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍝</span>
+                    <div class="flashcard-text">pasta</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍌</span>
+                    <div class="flashcard-text">banana</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍪</span>
+                    <div class="flashcard-text">biscuit</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard-row">
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🥛</span>
+                    <div class="flashcard-text">milk</div>
+                </div>
+            </div>
+            <div class="flashcard food cut-line">
+                <div>
+                    <span class="emoji">🍫</span>
+                    <div class="flashcard-text">chocolate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: GESTURE & RHYTHM GUIDE -->
+    <div class="page">
+        <h2 style="text-align: center; margin-bottom: 20px; font-size: 18px;">🎭 GESTURE & RHYTHM GUIDE</h2>
+
+        <div style="margin-bottom: 20px;">
+            <h3 style="color: #1976d2; margin-bottom: 10px;">Breakfast Foods - SLOW & SMOOTH</h3>
+            <ul style="margin-left: 20px; font-size: 14px; line-height: 2;">
+                <li><strong>🥣 cereal</strong> - Circle hand motion (pouring)</li>
+                <li><strong>🍞 toast</strong> - Pop hand up (like toast popping)</li>
+                <li><strong>🥛 yoghurt</strong> - Spoon motion (eating)</li>
+                <li><strong>🥚 egg</strong> - Crack hand gesture</li>
+            </ul>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <h3 style="color: #00796b; margin-bottom: 10px;">Lunch & Dinner - MEDIUM SPEED</h3>
+            <ul style="margin-left: 20px; font-size: 14px; line-height: 2;">
+                <li><strong>🍎 apple</strong> - Point & pick motion</li>
+                <li><strong>🥪 sandwich</strong> - Clap hands together</li>
+                <li><strong>🍕 pizza</strong> - Triangle hand shape</li>
+                <li><strong>🥔 potato</strong> - Hold up fist (round)</li>
+                <li><strong>🍝 pasta</strong> - Twirl fork motion</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 style="color: #7b1fa2; margin-bottom: 10px;">Bedtime Foods - SOFT & GENTLE</h3>
+            <ul style="margin-left: 20px; font-size: 14px; line-height: 2;">
+                <li><strong>🍌 banana</strong> - Peel motion with hands</li>
+                <li><strong>🍪 biscuit</strong> - Bite motion</li>
+                <li><strong>🥛 milk</strong> - Cup hands (holding glass)</li>
+                <li><strong>🍫 chocolate</strong> - Rubbing hands together (warm)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

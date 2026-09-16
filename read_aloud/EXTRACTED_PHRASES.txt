@@ -1,0 +1,35 @@
+18 TARGET PHRASES - "What do you like?"
+========================================
+
+QUESTION PATTERNS:
+1. What do you like for breakfast?
+2. What do you like for snack?
+3. What do you like for lunch?
+4. What do you like for tea?
+5. What do you like for dinner?
+6. What do you like at bedtime?
+
+FOOD RESPONSES (Suggested Items):
+7. I like cereal
+8. I like toast
+9. I like yoghurt
+10. I like apple
+11. I like egg
+12. I like cake
+13. I like sandwich
+14. I like pizza
+15. I like baked potato
+16. I like pasta
+17. I like curry
+18. I like milk
+
+FULL EXTRACTION FROM PPTX:
+- Breakfast: toast, yoghurt, cereal, egg, apple, cake
+- Snack: an apple, egg, cake
+- Lunch: a sandwich, pizza, baked potato
+- Dinner: pasta, curry, sausage
+- Tea: banana, biscuit, peanut butter sandwich
+- Bedtime: milk, hot chocolate, water
+
+Source: /Users/ashton/Claude Projects/teaching/phonics/K3 fall semster /Unit 1-Health/1-What do you like/3-What do you like (Anna owen, food, health).pptx
+Extracted: 2026-09-16
