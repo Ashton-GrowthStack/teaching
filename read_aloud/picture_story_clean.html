@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Do You Like? - Picture Story</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: white; padding: 0; }
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            page-break-after: always;
+        }
+
+        .page.vibrant-1 { background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); }
+        .page.vibrant-2 { background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); }
+        .page.vibrant-3 { background: linear-gradient(135deg, #00CED1 0%, #00BFFF 100%); }
+        .page.vibrant-4 { background: linear-gradient(135deg, #32CD32 0%, #00FF00 100%); }
+        .page.vibrant-5 { background: linear-gradient(135deg, #FF4500 0%, #FF6347 100%); }
+        .page.vibrant-6 { background: linear-gradient(135deg, #9370DB 0%, #8A2BE2 100%); }
+        .page.vibrant-7 { background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%); }
+
+        .picture-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .picture-space {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #999;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border: 3px solid white;
+        }
+
+        .picture-space img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .word-label {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .title-page h1 {
+            font-size: 64px;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .title-page p {
+            font-size: 32px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .emoji-big {
+            font-size: 120px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .end-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .end-page h2 {
+            font-size: 56px;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .food-word {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media print {
+            body { margin: 0; }
+            .page { page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TITLE PAGE -->
+    <div class="page vibrant-1 title-page">
+        <div class="emoji-big">👧🍕👦</div>
+        <h1>WHAT DO YOU LIKE?</h1>
+        <p>A Picture Story</p>
+    </div>
+
+    <!-- PAGE 1: CEREAL -->
+    <div class="page vibrant-1">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥣
+            </div>
+            <div class="word-label">CEREAL</div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: TOAST -->
+    <div class="page vibrant-2">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍞
+            </div>
+            <div class="word-label">TOAST</div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: YOGHURT -->
+    <div class="page vibrant-3">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥛
+            </div>
+            <div class="word-label">YOGHURT</div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: EGG -->
+    <div class="page vibrant-4">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥚
+            </div>
+            <div class="word-label">EGG</div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: APPLE -->
+    <div class="page vibrant-5">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍎
+            </div>
+            <div class="word-label">APPLE</div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: COOKIE -->
+    <div class="page vibrant-6">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍪
+            </div>
+            <div class="word-label">COOKIE</div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: BANANA -->
+    <div class="page vibrant-1">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍌
+            </div>
+            <div class="word-label">BANANA</div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: SANDWICH -->
+    <div class="page vibrant-2">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥪
+            </div>
+            <div class="word-label">SANDWICH</div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: PIZZA -->
+    <div class="page vibrant-3">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍕
+            </div>
+            <div class="word-label">PIZZA</div>
+        </div>
+    </div>
+
+    <!-- PAGE 10: POTATO -->
+    <div class="page vibrant-4">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥔
+            </div>
+            <div class="word-label">POTATO</div>
+        </div>
+    </div>
+
+    <!-- PAGE 11: NOODLES -->
+    <div class="page vibrant-5">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍝
+            </div>
+            <div class="word-label">NOODLES</div>
+        </div>
+    </div>
+
+    <!-- PAGE 12: CAKE -->
+    <div class="page vibrant-6">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍰
+            </div>
+            <div class="word-label">CAKE</div>
+        </div>
+    </div>
+
+    <!-- PAGE 13: MILK -->
+    <div class="page vibrant-2">
+        <div class="picture-card">
+            <div class="picture-space">
+                🥛
+            </div>
+            <div class="word-label">MILK</div>
+        </div>
+    </div>
+
+    <!-- PAGE 14: CHOCOLATE -->
+    <div class="page vibrant-3">
+        <div class="picture-card">
+            <div class="picture-space">
+                🍫
+            </div>
+            <div class="word-label">CHOCOLATE</div>
+        </div>
+    </div>
+
+    <!-- END PAGE -->
+    <div class="page vibrant-4 end-page">
+        <h2>YOU DID IT! 🎉</h2>
+        <p style="font-size: 32px; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">All 14 Words!</p>
+        <div class="food-grid">
+            <div class="food-word">cereal</div>
+            <div class="food-word">toast</div>
+            <div class="food-word">yoghurt</div>
+            <div class="food-word">egg</div>
+            <div class="food-word">apple</div>
+            <div class="food-word">cookie</div>
+            <div class="food-word">banana</div>
+            <div class="food-word">sandwich</div>
+            <div class="food-word">pizza</div>
+            <div class="food-word">potato</div>
+            <div class="food-word">noodles</div>
+            <div class="food-word">cake</div>
+            <div class="food-word">milk</div>
+            <div class="food-word">chocolate</div>
+        </div>
+    </div>
+</body>
+</html>
